@@ -1,6 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/go:1.21
 
 RUN curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh
+RUN $ curl https://github.com/ovh/venom/releases/download/v1.1.0/venom.linux-amd64 -L -o /usr/local/bin/venom && chmod +x /usr/local/bin/venom
 
 # [Optional] Uncomment the next lines to use go get to install anything else you need
 # USER vscode
