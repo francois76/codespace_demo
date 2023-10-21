@@ -25,7 +25,10 @@ services:
     image: postgres:latest
     restart: unless-stopped
     volumes:
-      - fixtures.sql:/docker-entrypoint-initdb.d/dummy_dump.sql
+      - type: bind
+        source: fixtures.sql
+        target: /docker-entrypoint-initdb.d/dummy_dump.sql
+        read_only: true
     env_file:
       # Ensure that the variables in .env match the same variables in devcontainer.json
       - .env
