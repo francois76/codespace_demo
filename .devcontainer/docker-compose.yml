@@ -1,8 +1,5 @@
 version: '3.8'
 
-volumes:
-  fixture: fixtures.sql
-
 services:
   app:
     build: 
@@ -28,7 +25,7 @@ services:
     image: postgres:latest
     restart: unless-stopped
     volumes:
-      - fixture:/docker-entrypoint-initdb.d/dummy_dump.sql
+      - fixtures.sql:/docker-entrypoint-initdb.d/dummy_dump.sql
     env_file:
       # Ensure that the variables in .env match the same variables in devcontainer.json
       - .env
