@@ -1,0 +1,31 @@
+Oct 21 19:17:32.684 [INFO] Reading fixtures.venom.yaml
+Oct 21 19:17:32.685 [INFO] Parsing testsuite fixtures.venom.yaml : map[venom.datetime:2023-10-21T19:17:32Z venom.testsuite:Chargement des fixtures venom.testsuite.filename:fixtures.venom.yaml venom.testsuite.filepath:fixtures.venom.yaml venom.testsuite.name:Chargement des fixtures venom.testsuite.shortName:fixtures.venom venom.testsuite.workdir:/workspaces/codespace_demo venom.timestamp:1697915852]
+Oct 21 19:17:32.694 [DEBU] Testsuite (fixtures.venom.yaml) variables: map[venom.datetime:2023-10-21T19:17:32Z venom.testsuite:Chargement des fixtures venom.testsuite.filename:fixtures.venom.yaml venom.testsuite.filepath:fixtures.venom.yaml venom.testsuite.name:Chargement des fixtures venom.testsuite.shortName:fixtures.venom venom.testsuite.workdir:/workspaces/codespace_demo venom.timestamp:1697915852]
+Oct 21 19:17:32.694 [DEBU] nb testsuites: 1
+Oct 21 19:17:32.695 [INFO] [Chargement des fixtures] Starting testsuite
+Oct 21 19:17:32.695 [INFO] [Chargement des fixtures] [Fixtures] Starting testcase
+Oct 21 19:17:32.695 [DEBU] [Chargement des fixtures] [Fixtures] Running testcase with variable venom.timestamp: 1697915852
+Oct 21 19:17:32.695 [DEBU] [Chargement des fixtures] [Fixtures] Running testcase with variable venom.testsuite.workdir: /workspaces/codespace_demo
+Oct 21 19:17:32.695 [DEBU] [Chargement des fixtures] [Fixtures] Running testcase with variable venom.datetime: 2023-10-21T19:17:32Z
+Oct 21 19:17:32.695 [DEBU] [Chargement des fixtures] [Fixtures] Running testcase with variable venom.outputdir: 
+Oct 21 19:17:32.697 [DEBU] [Chargement des fixtures] [Fixtures] Running testcase with variable venom.testcase: Fixtures
+Oct 21 19:17:32.697 [DEBU] [Chargement des fixtures] [Fixtures] Running testcase with variable venom.testsuite: Chargement des fixtures
+Oct 21 19:17:32.697 [DEBU] [Chargement des fixtures] [Fixtures] Running testcase with variable venom.executable: /usr/local/bin/venom
+Oct 21 19:17:32.697 [DEBU] [Chargement des fixtures] [Fixtures] Running testcase with variable venom.libdir: 
+Oct 21 19:17:32.697 [DEBU] [Chargement des fixtures] [Fixtures] Running testcase with variable venom.testsuite.filepath: fixtures.venom.yaml
+Oct 21 19:17:32.697 [DEBU] [Chargement des fixtures] [Fixtures] Running testcase with variable __Len__: 8
+Oct 21 19:17:32.697 [DEBU] [Chargement des fixtures] [Fixtures] Running testcase with variable venom.testsuite.filename: fixtures.venom.yaml
+Oct 21 19:17:32.697 [DEBU] [Chargement des fixtures] [Fixtures] Running testcase with variable venom.testsuite.name: Chargement des fixtures
+Oct 21 19:17:32.697 [DEBU] [Chargement des fixtures] [Fixtures] Running testcase with variable venom.testsuite.shortName: fixtures.venom
+Oct 21 19:17:32.697 [DEBU] [Chargement des fixtures] [Fixtures] Running testcase with variable __Type__: Map
+Oct 21 19:17:32.698 [INFO] [Chargement des fixtures] [Fixtures] Step #0 content is: {"database":"postgres","dsn":"postgres://postgres:@localhost:5432/postgres?sslmode=disable","schemas":["fixtures.sql"],"type":"dbfixtures"}
+Oct 21 19:17:32.698 [DEBU] [Chargement des fixtures] [Fixtures] [dbfixtures] connecting to database postgres, postgres://postgres:@localhost:5432/postgres?sslmode=disable
+
+Oct 21 19:17:32.705 [DEBU] [Chargement des fixtures] [Fixtures] [dbfixtures] loading schema from file fixtures.sql
+
+Oct 21 19:17:32.763 [DEBU] [Chargement des fixtures] [Fixtures] [dbfixtures] neither files or folder parameter was used
+
+Oct 21 19:17:32.763 [DEBU] [Chargement des fixtures] [Fixtures] [dbfixtures] result of runTestStepExecutor: {Executor:{Files:[] Folder: Database:postgres DSN:postgres://postgres:@localhost:5432/postgres?sslmode=disable Schemas:[fixtures.sql] Migrations: MigrationsTable: SkipResetSequences:false}}
+Oct 21 19:17:32.764 [INFO] [Chargement des fixtures] [Fixtures] Ending testcase
+Oct 21 19:17:32.764 [INFO] [Chargement des fixtures] Ending testsuite
+Oct 21 19:17:32.764 [DEBU] final status: PASS

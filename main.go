@@ -10,12 +10,20 @@ import (
 	"github.com/uptrace/bun/driver/pgdriver"
 )
 
+type utilisateur struct {
+	bun.BaseModel `bun:"table:utilisateur,alias:u"`
+	Age           int    `bun:"age"`
+	Id            int    `bun:"id,pk,autoincrement"`
+	Nom           string `bun:"nom"`
+	Prenom        string `bun:"prenom"`
+}
+
 func main() {
 	sqldb := sql.OpenDB(pgdriver.NewConnector(pgdriver.WithDSN("postgres://postgres:@localhost:5432/postgres?sslmode=disable")))
-	result := map[string]interface{}{}
+	result := []utilisateur{}
 	db := bun.NewDB(sqldb, pgdialect.New())
 
-	err := db.NewRaw("SELECT VERSION()").Scan(context.Background(), &result)
+	err := db.NewRaw("SELECT * from utilisateurs").Scan(context.Background(), &result)
 	if err != nil {
 		fmt.Println("error: ", err)
 		return

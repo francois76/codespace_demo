@@ -1,0 +1,9 @@
+name: Chargement des fixtures
+testcases:
+  - name: Fixtures
+    steps:
+      - type: dbfixtures
+        database: postgres
+        dsn: postgres://postgres:@localhost:5432/postgres?sslmode=disable
+        schemas:
+          - fixtures.sql
